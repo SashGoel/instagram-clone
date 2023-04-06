@@ -13,5 +13,6 @@ This is an Instagram clone app built using the MERN stack (MongoDB, Express.js, 
 * React: JavaScript library for building user interfaces
 * Node.js: JavaScript runtime for server-side development
 * Cloudinary: Cloud-based image and video management service
+* Materialize: Modern responsive front-end framework based on Material Design
 * Mongoose: MongoDB object modeling library for Node.js
 * Passport.js: Authentication library for Node.js
