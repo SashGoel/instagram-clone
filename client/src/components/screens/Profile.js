@@ -7,7 +7,7 @@ const Profile = () => {
   const [image, setImage] = useState("")
 
   useEffect(() => {
-    fetch('http://localhost:5000/mypost', {
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/mypost', {
       headers: {
         "Authorization": "Bearer "+localStorage.getItem("jwt")
       }
@@ -30,7 +30,7 @@ const Profile = () => {
         .then(res => res.json())
         .then(data => {
 
-          fetch('http://localhost:5000/updatepic', {
+          fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/updatepic', {
             method: "put",
             headers: {
               "Content-Type": "application/json",
