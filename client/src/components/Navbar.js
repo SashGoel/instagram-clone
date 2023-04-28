@@ -44,7 +44,7 @@ const NavBar = ()=>{
 
      const fetchUsers = (query)=>{
         setSearch(query)
-        fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/search-users',{
+        fetch('https://server-insta-teal.vercel.app/search-users',{
           method:"post",
           headers:{
             "Content-Type":"application/json"
