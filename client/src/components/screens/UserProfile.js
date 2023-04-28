@@ -9,7 +9,7 @@ const Profile = () => {
   const [showfollow,setShowFollow] = useState(state?!state.following.includes(userid):true)
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${userid}`, {
+    fetch(`https://instagram-clone-34sky6m3g-sashgoel.vercel.app/user/${userid}`, {
       headers: {
         "Authorization": "Bearer "+localStorage.getItem("jwt")
       }
@@ -20,7 +20,7 @@ const Profile = () => {
   }, [])
 
   const followUser = ()=>{
-    fetch('http://localhost:5000/follow',{
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/follow',{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -48,7 +48,7 @@ const Profile = () => {
   }
 
   const unfollowUser = ()=>{
-    fetch('http://localhost:5000/unfollow',{
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/unfollow',{
       method:"put",
       headers:{
         "Content-Type":"application/json",
