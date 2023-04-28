@@ -13,7 +13,7 @@ const SignIn = () => {
             M.toast({html: "invalid email",classes:"#c62828 red darken-3"})
             return
         }
-        fetch("https://instagram-clone-34sky6m3g-sashgoel.vercel.app/signin",{
+        fetch("https://server-insta-teal.vercel.app/signin",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
