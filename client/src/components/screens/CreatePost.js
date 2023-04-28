@@ -10,7 +10,7 @@ const CreatePost = () => {
     const [url, setUrl] = useState("")
     useEffect(() => {
         if (url) {
-            fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/createpost", {
+            fetch("https://instagram-clone-34sky6m3g-sashgoel.vercel.app/createpost", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",
