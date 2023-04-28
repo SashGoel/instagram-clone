@@ -6,7 +6,7 @@ const Home = () => {
   const [data,setData] = useState([])
   const {state,dispatch} = useContext(UserContext)
   useEffect(()=>{
-    fetch('http://localhost:5000/allpost',{
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/allpost',{
       headers:{
         "Authorization":"Bearer "+localStorage.getItem("jwt")
       }
@@ -18,7 +18,7 @@ const Home = () => {
   },[])
 
   const likePost = (id)=>{
-    fetch('http://localhost:5000/like',{
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/like',{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -44,7 +44,7 @@ const Home = () => {
   }
 
   const unlikePost = (id)=>{
-    fetch('http://localhost:5000/unlike',{
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/unlike',{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -70,7 +70,7 @@ const Home = () => {
   }
 
   const makeComment = (text,postId)=>{
-    fetch('http://localhost:5000/comment',{
+    fetch('https://instagram-clone-34sky6m3g-sashgoel.vercel.app/comment',{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -97,7 +97,7 @@ const Home = () => {
   }
 
   const deletePost = (postid)=>{
-    fetch(`http://localhost:5000/deletepost/${postid}`,{
+    fetch(`https://instagram-clone-34sky6m3g-sashgoel.vercel.app/deletepost/${postid}`,{
       method:"delete",
       headers:{
         "Content-Type":"application/json",
