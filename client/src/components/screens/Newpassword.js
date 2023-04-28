@@ -8,7 +8,7 @@ const SignIn = () => {
     const {token} = useParams()
     console.log(token)
     const PostData = ()=>{
-        fetch("https://instagram-clone-34sky6m3g-sashgoel.vercel.app/new-password",{
+        fetch("https://server-insta-teal.vercel.app/new-password",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
